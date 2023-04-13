@@ -1,0 +1,44 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <th>Fat</th>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <th>Carbohydrate</th>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <th>Protein</th>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let foodItem of foodList">
+      <td>{{ foodItem.name }}</td>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <td>{{ foodItem.fat }}</td>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <td>{{ foodItem.carbohydrate }}</td>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <td>{{ foodItem.protein }}</td>
+       &nbsp;
+      &nbsp;
+      &nbsp;
+      <td><button (click)="addToTodayList(foodItem)">Add to today's list</button></td>
+    </tr>
+  </tbody>
+</table>
